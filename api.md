@@ -13,8 +13,8 @@ For example:
 local window = api.Window
 window:Open()
 window:ShowMessage(
-	"Test Message", -- Title
-	"This is a test message!" -- Description
+    "Test Message", -- Title
+    "This is a test message!" -- Description
 )
 ```
 

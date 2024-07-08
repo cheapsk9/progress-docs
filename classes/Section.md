@@ -17,8 +17,8 @@ The title text of this section.
 CreateElement (name : string, configTable : Dictionary)
 Creates an element to be displayed or interacted with in this section.
 
-SetSection (section : Dictionary) : void
-Sets which tab this section belongs to.
+SetPage (page : Dictionary) : void
+Sets which page this section belongs to.
 
 SetTitle (label : Dictionary) : void
 Sets the title displayed on the section.

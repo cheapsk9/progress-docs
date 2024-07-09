@@ -7,16 +7,16 @@ IsWhitelist: bool [Read Only]
 Whether the authentication method uses a key (false) or whitelist (true).
 ## 🚀 Methods
 
-SetKeyLink (text : string)
+SetKeyLink (text : string) : void
 Sets the link to be copied if the user chooses to use the key system.
 
-SetWhitelistLink (text : string)
+SetWhitelistLink (text : string) : void
 Sets the link to be copied if the user chooses to use the whitelist system.
 
-SetDiscordLink (text : string)
+SetDiscordLink (text : string) : void
 Sets the link to the Discord server to be displayed in the "Need help?" page.
 
-SetWhitelist (whitelist : string)
+SetWhitelist (whitelist : string) : void
 Sets whether the authentication method uses a key or whitelist.
 ## ⚡ Events
 

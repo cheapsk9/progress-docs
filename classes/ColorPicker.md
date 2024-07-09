@@ -18,5 +18,5 @@ Changed (value : Color3) : RBXScriptSignal
 Fires when the user changes the color via the Color Selection UI.
 ## 📞 Callbacks
 
-OnChanged: void
-Called when the color picker changes color.
+OnChanged: Color3
+Called when the user changes the color picker's displayed color.

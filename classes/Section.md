@@ -5,20 +5,16 @@ Sections allow you to organize elements on a page into separate categories. This
 
 Tab: Dictionary [Read Only]
 The tab that this section belongs to.
-> [!IMPORTANT]
-> This member is read-only, and can not be changed or written to.
 
 Title: string [Read Only]
 The title text of this section.
-> [!IMPORTANT]
-> This member is read-only, and can not be changed or written to.
 ## 🚀 Methods
 
-CreateElement (name : string, configTable : Dictionary)
+CreateElement (name : string, configTable : Dictionary) : Dictionary
 Creates an element to be displayed or interacted with in this section.
 
 SetPage (page : Dictionary) : void
 Sets which page this section belongs to.
 
-SetTitle (label : Dictionary) : void
+SetTitle (text : string) : void
 Sets the title displayed on the section.

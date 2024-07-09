@@ -14,3 +14,9 @@ Removes the passed Page from the UI entirely.
 ## ⚡ Events
 
 PageChanged (currentPage : Dictionary, previousPage : Dictionary) : RBXScriptSignal
+Fires when the user changes pages. The first parameter is the current page that the user went to, and the second is the previous page the user was on. Does not fire if the user clicks the same tab they are currently on.
+
+## 📞 Callbacks
+
+OnPageChanged: Dictionary, Dictionary
+Called when the user changes the color picker's displayed color.

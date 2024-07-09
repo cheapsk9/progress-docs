@@ -13,7 +13,3 @@ Sets the text displayed on the button.
 
 Click () : RBXScriptSignal
 Fires when the user presses and releases their cursor on the button.
-## 📞 Callbacks
-
-OnClick: void
-Called when the button is clicked

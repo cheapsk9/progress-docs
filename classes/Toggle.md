@@ -13,3 +13,7 @@ Sets the state of the toggle.
 
 Changed () : RBXScriptSignal
 Fires when the user changes the state of the toggle.
+## 📞 Callbacks
+
+OnChanged: bool
+Called when the user changes this Toggle's state.

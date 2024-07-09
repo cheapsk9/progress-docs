@@ -31,3 +31,7 @@ Sets the rounding increment of the slider.
 
 Changed (value : number) : RBXScriptSignal
 Fires when the user changes the slider's value.
+## 📞 Callbacks
+
+OnChanged: number
+Called when the user changes the slider's value.

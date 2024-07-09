@@ -1,3 +1,5 @@
+# Icon Reference
+
 50 original, high-quality icons icons are available for display in tabs. Currently, tabs are the only visual component that can display these icons, but there may be more that support displaying them in the future. All tab icons were created on a 20x20 pixel grid.
 
 | Icon                                                | Name        | Example Use Cases              |

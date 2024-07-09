@@ -18,6 +18,7 @@ window:ShowMessage(
 )
 ```
 
+Functions of the API are also programmed to throw the least amount of errors possible (so there's less chance of Progress being detected through `LogService`), so be sure that the API is doing what you expect. If not, your calls to the API could be failing silently. A debug console specific to Progress is being planned for the future.
 ## 🔍 Properties
 
 Base: Instance [Read Only]
@@ -36,10 +37,13 @@ Gui: Instance [Read Only]
 The GUI `SurfaceGui` itself.
 
 Window: Dictionary [Read Only]
+A reference to the [Window](classes/Window.md) object.
 
 Login: Dictionary [Read Only]
+A reference to the [Login](classes/Login.md) object.
 
 Hub: Dictionary [Read Only]
+A reference to the [Hub](classes/Hub.md) object.
 ## ⚡ Events
 
 Destroying () : RBXScriptSignal

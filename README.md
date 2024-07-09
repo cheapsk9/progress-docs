@@ -7,22 +7,23 @@ Here you can find full documentation of the API, examples, and references for al
 Click on any of the classes in the tree below to explore its API:
 
 (API)
-	(Base Component)
-		Hub
-		Login
-		Window
-		(Base Display)
-			Category
-			Page
-			Section
-			(Base Element)
-				Alert
-				Label
-				(Base Interactable)
-					Button
-					(Base Value)
-						ColorPicker
-						Dropdown
-						Slider
-						TextBox
-						Toggle
+	(Base Object)
+		(Base Component)
+			Hub
+			Login
+			Window
+			(Base Display)
+				Category
+				Page
+				Section
+				(Base Element)
+					Alert
+					Label
+					(Base Interactable)
+						Button
+						(Base Value)
+							ColorPicker
+							Dropdown
+							Slider
+							TextBox
+							Toggle

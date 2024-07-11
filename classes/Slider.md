@@ -35,3 +35,30 @@ Fires when the user changes the slider's value.
 
 OnChanged: number
 Called when the user changes the slider's value.
+## 💡 Code Example
+
+The following example shows how to create a basic slider:
+```lua
+-- Create the slider
+local slider = Sections.Self.Main:CreateElement("Slider", {
+	Value = 3,
+	Min = 0,
+	Max = 10,
+	Interval = 1, -- If 0, the slider is free to move without restrictions. If 1, the slider will "snap" to integers.
+	Label = {
+		Title = "A Cool Slider",
+		Text = "I'm a very cool slider that can select any integer from 0-10."
+	},
+	-- Assign a callback
+	-- You can also use slider.Changed:Connect(f), although this is immediate.
+	Callback = function(value)
+		print("The slider value changed to:", value)
+	end
+})
+
+-- Wait 3 seconds
+task.wait(3)
+
+-- Change the value to a random number from 0 to 10 (accounts for rounding)
+slider:SetValue(math.random(0, 10))
+```

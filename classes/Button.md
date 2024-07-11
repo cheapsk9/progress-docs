@@ -13,3 +13,6 @@ Sets the text displayed on the button.
 
 Click () : RBXScriptSignal
 Fires when the user presses and releases their cursor on the button.
+
+> [!NOTE]
+> Buttons do not have callbacks, because they don't need them. The `Click` event is wired directly to Roblox's `MouseButton1Click ()` event. To have a function fire when a button is clicked, connect to the `Click` event instead.

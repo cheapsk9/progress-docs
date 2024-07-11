@@ -20,3 +20,23 @@ Fires when the user changes the color via the Color Selection UI.
 
 OnChanged: Color3
 Called when the user changes the color picker's displayed color.
+## 💡 Code Example
+
+```lua
+local colorPicker = Sections.Self.Main:CreateElement("ColorPicker", {
+	Value = Color3.fromRGB(100, 0, 50),
+	Label = {
+		Title = "Color picker",
+		Text = "I am a color picker. Click me to choose from over 1.6 million colors."
+	},
+	Callback = function(value)
+		print("Color picker changed value:", value)
+	end
+})
+
+-- Wait 3 seconds
+task.wait()
+
+-- Set the color picker's value to a random color
+colorPicker:SetValue(BrickColor.random().Color)
+```

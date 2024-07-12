@@ -12,10 +12,6 @@ Sets the current selected color of the ColorPicker.
 
 Open () : void
 Forces the Color Selection UI to open on this ColorPicker. Use the `Changed` event of the Color Picker to listen when the user interacts with it. Note that if the user closes the color picker, it will not fire.
-## ⚡ Events
-
-Changed (value : Color3) : RBXScriptSignal
-Fires when the user changes the color via the Color Selection UI.
 ## 📞 Callbacks
 
 OnChanged: Color3
@@ -23,6 +19,7 @@ Called when the user changes the color picker's displayed color.
 ## 💡 Code Example
 
 ```lua
+-- Create the color picker
 local colorPicker = Sections.Self.Main:CreateElement("ColorPicker", {
 	Value = Color3.fromRGB(100, 0, 50),
 	Label = {

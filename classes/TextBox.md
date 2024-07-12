@@ -18,15 +18,10 @@ SetPlaceholderText (text : string) : void
 Sets the placeholder text of the TextBox.
 ## ⚡ Events
 
-Changed (value : string) : RBXScriptSignal
-Fires when the user (or scripts) changes the text in the TextBox.
-> [!WARNING]
-> This event is also fired when scripts change the value. Be careful to not cause infinite loops
-
 Focused () : RBXScriptSignal
 Fires when the TextBox is focused.
 
-FocusReleased () : RBXScriptSignal
+FocusLost () : RBXScriptSignal
 Fires when the TextBox focus is released.
 ## 📞 Callbacks
 
@@ -38,7 +33,7 @@ Called when the TextBox's text changes.
 
 ```lua
 -- Create the text box
-Sections.Self.Main:CreateElement("TextBox", {
+local textBox = Sections.Self.Main:CreateElement("TextBox", {
 	Value = "Default Text",
 	PlaceholderText = "Placeholder Text",
 	Label = {
@@ -54,5 +49,5 @@ Sections.Self.Main:CreateElement("TextBox", {
 task.wait(3)
 
 -- Change the textbox's text
-TextBox:SetValue("Hello, world!")
+textBox:SetValue("Hello, world!")
 ```

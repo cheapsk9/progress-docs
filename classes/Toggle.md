@@ -12,10 +12,6 @@ Sets the state of the toggle.
 
 Toggle () : void
 Inverts the state of the toggle. If the toggle is false, it will be set to true, and vice versa.
-## ⚡ Events
-
-Changed () : RBXScriptSignal
-Fires when the user changes the state of the toggle.
 ## 📞 Callbacks
 
 OnChanged: bool
@@ -31,7 +27,7 @@ local toggle = Sections.Self.Main:CreateElement("Toggle", {
 		Text = "I am a toggle"
 	},
 	Callback = function(value)
-		print("The state of the toggle changed", value)
+		print("The state of the toggle changed:", value)
 	end
 })
 

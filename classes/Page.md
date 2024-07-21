@@ -3,17 +3,20 @@
 A page (also known as a tab in some other UI libraries) is a container for sections, which hold elements. It comes with its own tab, which can have text and an icon.
 ## 🔍 Properties
 
-TabIcon: string [Read Only]
+TabIcon : string [Read Only]
 The name corresponding to the icon that this tab uses.
 
-TabText: string [Read Only]
+TabText : string [Read Only]
 The text displayed on the tab.
 
-Focused: bool [Read Only]
+TabInstance : Instance [Read Only]
+A reference to the tab instance displayed on the sidebar.
+
+Focused : bool [Read Only]
 Whether or not the tab is in focus.
 ## 🚀 Methods
 
-CreateSection (name : string, iconName : string) : void
+CreateSection (name : string, titleVisible : bool) : void
 Creates a section to group elements into.
 
 SetTabText (text : string) : void

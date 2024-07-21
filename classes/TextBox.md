@@ -3,10 +3,10 @@
 The TextBox element is a simple rectangular area for text input.
 ## 🔍 Properties
 
-Value: string [Read Only]
+Value : string [Read Only]
 The text in the TextBox.
 
-PlaceholderText: string [Read Only]
+PlaceholderText : string [Read Only]
 The placeholder text to display when nothing is in the TextBox.
 Default value: ""
 ## 🚀 Methods
@@ -40,7 +40,7 @@ local textBox = Sections.Self.Main:CreateElement("TextBox", {
 		Title = "This is a text box.",
 		Text = "You type stuff into it, and it does cool things."
 	},
-	Callback = function(value)
+	OnChanged = function(value)
 		print("The textbox's text changed to:", value)
 	end
 })

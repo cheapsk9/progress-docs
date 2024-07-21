@@ -9,7 +9,7 @@ They are created by calling `Section:CreateElement()`. A config table describes 
 
 ## 🔍 Properties
 
-Label: Dictionary [Read Only]
+Label : Dictionary [Read Only]
 The table of the label passed to this element.
 > [!IMPORTANT]
 > This member is read-only after setting it in CreateElement().  

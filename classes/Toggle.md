@@ -3,7 +3,7 @@
 A toggle is a Boolean switch that simply describes an on or off (`true` or `false`) state. As such, it can only be in one of two states at a time.
 ## 🔍 Properties
 
-Value: bool [Read Only]
+Value : bool [Read Only]
 The Boolean state of the toggle.
 ## 🚀 Methods
 
@@ -26,7 +26,7 @@ local toggle = Sections.Self.Main:CreateElement("Toggle", {
 		Title = "Toggle",
 		Text = "I am a toggle"
 	},
-	Callback = function(value)
+	OnChanged = function(value)
 		print("The state of the toggle changed:", value)
 	end
 })

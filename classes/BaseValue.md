@@ -3,7 +3,7 @@
 This is an abstract class which manages value objects (objects which can hold a user-defined value)
 ## 🔍 Properties
 
-Enabled: bool [Read Only]
+Enabled : bool [Read Only]
 ## 🚀 Methods
 
 SetEnabled (enabled : bool) : void [UNAVAILABLE]

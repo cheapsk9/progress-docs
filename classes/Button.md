@@ -3,8 +3,9 @@
 A button is a basic interaction element that can be clicked. It can also display text on its surface.
 ## 🔍 Properties
 
-Text: string [Read Only]
+Text : string [Read Only]
 The text displayed on the button.
+Default: "Button"
 ## 🚀 Methods
 
 SetText (text : string) : void
@@ -21,7 +22,7 @@ Fires when the user presses and releases their cursor on the button.
 ```lua
 -- Create the button
 local button = Sections.Self.Main:CreateElement("Button", {
-	Value = "Press me!",
+	Text = "Press me!",
 	Label = {
 		Title = "Am a cool button",
 		Text = "Press me for important information regarding your fridge."

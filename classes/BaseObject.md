@@ -1,13 +1,13 @@
 # BaseObject
 ## 🔍 Properties
 
-ObjectName: string [Read Only]
+ObjectName : string [Read Only]
 The name of the component for easy referencing.
 
-Instance: Instance [Read Only]
+Instance : Instance [Read Only]
 The *real* object (Roblox Instance) reference to this object, if applicable. Otherwise, returns nil.
 
-Parent: Dictionary [Read Only]
+Parent : Dictionary [Read Only]
 The parent object of this object. For Pages, this will be `nil`, but for Sections, this will be the corresponding Tab, and for Elements, it will be the corresponding Section.
 ## 🚀 Methods
 

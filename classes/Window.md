@@ -3,13 +3,13 @@
 The Window object contains functions and properties related to reading and controlling the state of the window. Most importantly, `Window:Open()` will open the window to display its content.
 ## 🔍 Properties
 
-IsMinimized: bool [Read Only]
+IsMinimized : bool [Read Only]
 Whether or not the window is currently minimized. Ignores playing transitions.
 
-IsSmall: bool [Read Only]
+IsSmall : bool [Read Only]
 Whether the window is currently taking up half (true) or all (false) of the allocated screen area. Ignores playing transitions.
 
-IsOpen: bool [Read Only]
+IsOpen : bool [Read Only]
 Whether or not the window is currently open. Ignores playing transitions.
 
 ThemeId: number [Read Only]
@@ -29,6 +29,9 @@ Opens the window.
 
 Close (transition? : bool) : void
 Forces the window to close and cleans up the UI.
+
+SetSubtitle(text : string) : void
+Sets the subtitle text displayed on the UI, beneath the title.
 
 ChangeTheme (themeId : number) : void
 ## ⚡ Events

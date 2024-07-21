@@ -3,11 +3,13 @@
 Sections allow you to organize elements on a page into separate categories. This can help your users find things more easily and mitigates the need to break categories into separate pages just to split content. For example, in a tab for auto-farm, you may want to put a section for auto-farming mobs and auto-farming items, rather than putting them together or in separate pages.
 ## 🔍 Properties
 
-Tab: Dictionary [Read Only]
+Tab : Dictionary [Read Only]
 The tab that this section belongs to.
 
-Title: string [Read Only]
+Title : string [Read Only]
 The title text of this section.
+
+TitleVisible : bool [Read Only]
 ## 🚀 Methods
 
 CreateElement (name : string, configTable : Dictionary) : Dictionary

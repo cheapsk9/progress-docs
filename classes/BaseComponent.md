@@ -7,7 +7,7 @@ They are created by calling various different functions, such as `API:CreatePage
 
 ## 🔍 Properties
 
-Visible: bool [Read Only]
+Visible : bool [Read Only]
 Whether or not this component is currently visible to the user.
 ## 🚀 Methods
 

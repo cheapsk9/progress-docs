@@ -20,7 +20,7 @@ Called when the user changes this Toggle's state.
 
 ```lua
 -- Create the toggle
-local toggle = Sections.Self.Main:CreateElement("Toggle", {
+local toggle = sections.Self.Main:CreateElement("Toggle", {
 	Value = true,
 	Label = {
 		Title = "Toggle",

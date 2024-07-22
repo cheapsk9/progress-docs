@@ -6,7 +6,7 @@ Keep in mind that this will take some time to add all the listed features.
 | Feature                               | Status                                              |
 | ------------------------------------- | --------------------------------------------------- |
 | Full API Support                      | Working; Almost finished                            |
-| Notification System and API           | Planned                                             |
+| Notification System API               | Planned                                             |
 | Tools Page                            | Planned                                             |
 | Supported Games Page                  | Planned                                             |
 | Badge/Event Item Farming              | Planned                                             |

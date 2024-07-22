@@ -11,6 +11,7 @@ Under the API, certain objects have functions under them which you can call. To 
 For example:
 ```lua
 local window = api.Window
+
 window:Open()
 window:ShowMessage(
     "Test Message", -- Title
@@ -19,6 +20,29 @@ window:ShowMessage(
 ```
 
 Functions of the API are also programmed to throw the least amount of errors possible (so there's less chance of Progress being detected through `LogService`), so be sure that the API is doing what you expect. If not, your calls to the API could be failing silently. A debug console specific to Progress is being planned for the future.
+
+Example of passing the API to a script:
+```lua
+-- Example of a lookup table with PlaceId as key and loadstring Url as value
+local gameLookupTable = {
+	[1234] = "https://raw.githubusercontent.com/Prosexy/games/game1234.lua",
+	[2345] = "https://raw.githubusercontent.com/Prosexy/games/game2345.lua",
+	[8765] = "https://raw.githubusercontent.com/Prosexy/games/game7654.lua",
+	[9876] = "https://raw.githubusercontent.com/Prosexy/games/game9876.lua"
+}
+
+local gameScriptUrl = gameLookupTable[game.PlaceId]
+if gameScriptUrl then
+	loadstring(gameScriptUrl)(api) -- Pass the API into the game script
+end
+```
+
+From the game script's side:
+```lua
+local api = ...
+
+api.Window:ShowMessage("Hello!", "Hello from the other side!")
+```
 ## 🔍 Properties
 
 Base: Instance [Read Only]

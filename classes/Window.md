@@ -1,6 +1,9 @@
 # Window
 
 The Window object contains functions and properties related to reading and controlling the state of the window. Most importantly, `Window:Open()` will open the window to display its content.
+
+> [!IMPORTANT]
+> It's very important that when users close the hub, that your script stops running. It's highly recommended to listen to the `OnClosing` callback, and stop all loops that your script is running.
 ## 🔍 Properties
 
 IsMinimized : bool [Read Only]
@@ -49,3 +52,60 @@ Closing () : RBXScriptSignal
 Fires when the user (or scripts) closed the window.
 
 ThemeChanged (themeId : number) : RBXScriptSignal
+## 💡 Code Example
+
+```lua
+-- Prints when the window is opened.
+api.Window.OnOpened = function()
+	print("The window was opened.")
+end
+
+-- Prints when the window is minimized.
+api.Window.OnMinimizedChanged = function(isMinimized)
+	print("The window's minimized state changed to:", isMinimized)
+end
+
+-- Prints when the window's size changes.
+api.Window.OnSizeChanged = function(isSmall)
+	print("The window's size changed. Small:", isSmall)
+end
+
+-- Prints when the window is closing.
+api.Window.OnClosing = function()
+	print("The window is closing.")
+end
+
+
+-- Open the window.
+api.Window:Open()
+
+-- Change the window's subtitle to today's date.
+api.Window:SetSubtitle(os.date())
+
+-- Set the window to be small
+api.Window:SetSmall(true)
+
+-- Wait 2 seconds
+task.wait(2)
+
+-- Set the window back to normal
+api.Window:SetSmall(false)
+
+-- Wait 2 seconds
+task.wait(2)
+
+-- Minimize the window
+api.Window:SetMinimized(true)
+
+-- Wait 2 seconds
+task.wait(2)
+
+-- Restore the window
+api.Window:SetMinimized(false)
+
+-- Wait 5 seconds
+task.wait(5)
+
+-- Close the window
+api.Window:Close()
+```

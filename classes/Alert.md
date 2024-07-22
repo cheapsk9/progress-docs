@@ -16,11 +16,11 @@ Sets the type of the alert. See `AlertType` for more details.
 
 ```lua
 -- Create our alert
-Sections.Self.Main:CreateElement("Alert", {
+sections.Self.Main:CreateElement("Alert", {
 	Type = 3, -- The type of alert. In this case, it is "Important"
 	Label = {
 		-- Title is optional. If not provided, it will say the alert's type.
-		Title = "Imp-ortant", -- hehe funny demon pun hehe
+		Title = "Imp-ortant", -- hehe funny demon pun
 		Text = "Do not underestimate the power of cats."
 	}
 })

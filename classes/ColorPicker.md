@@ -20,7 +20,7 @@ Called when the user changes the color picker's displayed color.
 
 ```lua
 -- Create the color picker
-local colorPicker = Sections.Self.Main:CreateElement("ColorPicker", {
+local colorPicker = sections.Self.Main:CreateElement("ColorPicker", {
 	Value = Color3.fromRGB(100, 0, 50),
 	Label = {
 		Title = "Color picker",

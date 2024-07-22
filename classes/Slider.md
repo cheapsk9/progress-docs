@@ -46,7 +46,7 @@ Called when the user changes the slider's value.
 The following example shows how to create a basic slider:
 ```lua
 -- Create the slider
-local slider = Sections.Self.Main:CreateElement("Slider", {
+local slider = sections.Self.Main:CreateElement("Slider", {
 	Value = 3,
 	Min = 0,
 	Max = 10,

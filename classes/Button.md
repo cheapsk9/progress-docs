@@ -21,7 +21,7 @@ Fires when the user presses and releases their cursor on the button.
 
 ```lua
 -- Create the button
-local button = Sections.Self.Main:CreateElement("Button", {
+local button = sections.Self.Main:CreateElement("Button", {
 	Text = "Press me!",
 	Label = {
 		Title = "Am a cool button",

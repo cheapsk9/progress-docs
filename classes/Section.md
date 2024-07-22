@@ -20,3 +20,15 @@ Sets which page this section belongs to.
 
 SetTitle (text : string) : void
 Sets the title displayed on the section.
+## 💡 Code Example
+
+With our existing sections we made [previously](./Page.md), we can now start to assign elements to them.
+```lua
+-- Now that we have our sections created, we can create some elements within them.
+sections.Main:CreateElement("Button", {
+	Label = {
+		"Hello world",
+		"I am an example button"
+	}
+})
+```

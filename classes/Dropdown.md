@@ -159,7 +159,7 @@ dropdownConfig.Label = {
 }
 
 -- Create dropdown #1
-local dropdown1 = Sections.Self.Main:CreateElement("Dropdown", dropdownConfig)
+local dropdown1 = sections.Self.Main:CreateElement("Dropdown", dropdownConfig)
 
 -- Add to config for dropdown #2
 dropdownConfig.MultiSelect = true
@@ -169,7 +169,7 @@ dropdownConfig.Label = {
 }
 
 -- Create dropdown #2
-local dropdown2 = Sections.Self.Main:CreateElement("Dropdown", dropdownConfig)
+local dropdown2 = sections.Self.Main:CreateElement("Dropdown", dropdownConfig)
 
 -- Define `selected` and `values` variables from `dropdown2.Selected` and `dropdown2.Values`, which dynamically change.
 local selected = dropdown2.Selected

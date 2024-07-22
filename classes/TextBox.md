@@ -33,7 +33,7 @@ Called when the TextBox's text changes.
 
 ```lua
 -- Create the text box
-local textBox = Sections.Self.Main:CreateElement("TextBox", {
+local textBox = sections.Self.Main:CreateElement("TextBox", {
 	Value = "Default Text",
 	PlaceholderText = "Placeholder Text",
 	Label = {

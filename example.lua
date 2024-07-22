@@ -1,4 +1,3 @@
-```lua
 -- Putting together everything we've learned, we will now create a basic hub using all previous code snippets.
 
 local UI = ...
@@ -317,4 +316,3 @@ sections.Alerts.Main:CreateElement("Alert", {
 })
 
 -- End of example script
-```

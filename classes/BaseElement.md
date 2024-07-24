@@ -19,3 +19,32 @@ The table of the label passed to this element.
 
 SetLabel (label : Dictionary) : void
 Sets the label displayed on the element.
+## 💡 Code Example
+
+The below code example shows how to use `SetLabel` to change an element's displayed label. You can choose to only include in the table the parts of the label you want to change, such as `Title` or `Text`. 
+```lua
+-- Create a label container (or ANY element)
+local label = Sections.Self.Main:CreateElement("Label", {
+	Label = {
+		Title = "Hello, world",
+		Text = "This is an example label"
+	}
+})
+
+-- Wait 3 seconds
+task.wait(3)
+
+-- Update the label of this element, changing both the title and text.
+label:SetLabel({
+	Title = "Hello again!",
+	Text = "I have updated my text"
+})
+
+-- Wait 3 more seconds
+task.wait(3)
+
+-- Update the label again, this time only changing the title.
+label:SetLabel({
+	Title = "I have updated my title"
+})
+```

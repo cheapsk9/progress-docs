@@ -1,11 +1,10 @@
-```lua
 -- Putting together everything we've learned, we will now create a basic hub using all previous code snippets.
 
-local UI = ...
+local UI = Progress
 
 -- REMOVE EVERYTHING AFTER THIS LINE WHEN YOU ARE DONE TESTING!!!
 -- This simulates the user logging in, which is already handled by the loader.
-local UI = require(script.Parent)
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/cheapsk9/progress/main/main.lua"))()
 UI.Screen.Parent = game.Players.LocalPlayer.PlayerGui
 UI.Login.Object.Visible = true
 UI.Window:Open(true)
@@ -317,4 +316,3 @@ sections.Alerts.Main:CreateElement("Alert", {
 })
 
 -- End of example script
-```

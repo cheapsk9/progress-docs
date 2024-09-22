@@ -4,7 +4,7 @@ The **Label** element is simply a blank placeholder element with nothing in it. 
 
 See also: The `Label` property and `SetLabel` function of [`BaseElement`](./BaseElement.md)
 
-This component has no defined members.
+PrimaryContent: bool [Read Only]
 ## 💡 Code Example
 
 ```lua

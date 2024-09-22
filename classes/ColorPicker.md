@@ -5,16 +5,18 @@ A color picker is a powerful interface that allows your users to select any of t
 
 Value : Color3 [Read Only]
 The current selected color, as displayed by the ColorPicker.
+
+Alpha: number [Read Only]
 ## 🚀 Methods
 
 SetValue (value : Color3) : void
 Sets the current selected color of the ColorPicker.
 
 Open () : void
-Forces the Color Selection UI to open on this ColorPicker. Use the `Changed` event of the Color Picker to listen when the user interacts with it. Note that if the user closes the color picker, it will not fire.
+Forces the Color Selection UI to open on this ColorPicker. Use the `OnChanged` callback of the Color Picker to listen when the user interacts with it. Note that if the user closes the color picker, it will not fire.
 ## 📞 Callbacks
 
-OnChanged: Color3
+OnChanged: Color3, number
 Called when the user changes the color picker's displayed color.
 ## 💡 Code Example
 

@@ -4,7 +4,7 @@ All hub-related controls and properties.
 ## 🚀 Methods
 
 CreatePage (tabText : string, tabIcon : string) : Page(Dictionary)
-Creates a page with a tab to display in the Home section.
+Creates a [`Page`](./Page.md) with a tab to display in the Home section.
 
 FocusPage (page : Dictionary) : void
 Forces the passed Page to be selected.

@@ -54,6 +54,7 @@ Fires when the user (or scripts) closed the window.
 ThemeChanged (themeId : number) : RBXScriptSignal
 ## 💡 Code Example
 
+The following code snippet showcases the abilities of the Window by doing multiple things with it.
 ```lua
 -- Prints when the window is opened.
 api.Window.OnOpened = function()

@@ -4,7 +4,6 @@ A component is any of the following visual objects: Section, Tab, Element.
 
 Components have properties, methods, and events just like normal Roblox instances.
 They are created by calling various different functions, such as `API:CreatePage()`, `Page:CreateSection()`, and `Section:CreateElement()`. Components make it easy for you to customize your script's UI layout by providing an intuitive, object-oriented programming approach.
-
 ## 🔍 Properties
 
 Visible : bool [Read Only]

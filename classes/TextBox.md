@@ -21,8 +21,10 @@ Sets the placeholder text of the TextBox.
 Focused () : RBXScriptSignal
 Fires when the TextBox is focused.
 
-FocusLost () : RBXScriptSignal
-Fires when the TextBox focus is released.
+FocusLost (enterPressed : bool, inputThatCausedFocusLoss : InputObject) : RBXScriptSignal
+Fires when the TextBox focus is released. `enterPressed` is true if the user pressed the Enter key to cause the focus loss. Otherwise, `inputThatCausedFocusLoss` will be the `InputObject` that caused the focus loss.
+
+ReturnPressedFromOnScreenKeyboard () : RBXScriptSignal
 ## 📞 Callbacks
 
 OnChanged: string

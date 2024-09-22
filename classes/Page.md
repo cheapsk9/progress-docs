@@ -16,8 +16,13 @@ Focused : bool [Read Only]
 Whether or not the tab is in focus.
 ## 🚀 Methods
 
-CreateSection (name : string, titleVisible : bool) : void
-Creates a section to group elements into.
+CreateElement (name : string, configTable : Dictionary) : Dictionary
+Creates an element to be displayed or interacted with in this page.
+> [!TIP] Update!
+> You can now place elements directly into pages! You no longer need to create a section to place elements into. If you ever wanted to have an uncategorized element, now you can.
+
+CreateSection (name : string, placeholder : bool, titleHidden : bool) : void
+Creates a [`Section`](./Section.md) to group elements into. The second param is for legacy purposes and unused.
 
 SetTabText (text : string) : void
 Sets the text displayed on the tab.

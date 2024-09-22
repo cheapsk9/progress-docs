@@ -71,21 +71,6 @@ local slider = sections.Self.Main:CreateElement("Slider", {
 	end
 })
 
--- Create a slider
-local slider = sections.Self.Main:CreateElement("Slider", {
-	Value = 3,
-	Min = 0,
-	Max = 10,
-	Step = 1,
-	Label = {
-		Title = "A Cool Slider",
-		Text = "I'm a very cool slider that can select any integer from 0-10."
-	},
-	OnChanged = function(value)
-		print("The slider's value changed to:", value)
-	end
-})
-
 -- Create an alert
 sections.Self.Main:CreateElement("Alert", {
 	Type = 3, -- Important

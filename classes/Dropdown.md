@@ -100,27 +100,28 @@ The `reselect` parameter defines if the selection should revert to only the last
 This needs to be called manually due to the immediate changes of the `reselect` parameter.
 ## 📞 Callbacks
 
-OnValueSelected(value : any) : RBXScriptSignal
+OnSelectionChanged (values : Array) : RBXScriptSignal
+Returns a list of the currently selected objects.
+
+> [!NOTE] Note
+> Below are special callbacks that pertain to user behavior within the dropdown. These special callbacks only fire if the user interacts with the dropdown, or if the selection was forced by ForceSelection. They do not fire when scripts change them. For listening to script changes, use `OnSelectionChanged`.
+
+OnValueSelected (value : any) : RBXScriptSignal
 Fires when a value is selected, and returns that value.
 This only applies to selection being gained, not taken away. So, if `MultiSelect` is true or on a standard list with `SelectionLocks` set to false, and the user unselects the last value, this will not fire, however the `SelectionChanged` and `SelectionDiffered` events will fire.
 
-OnValueUnselected(value : any) : RBXScriptSignal
+OnValueUnselected (value : any) : RBXScriptSignal
 Fires when a value is unselected, and returns that value.
 
-OnSelectionChanged(values : Array) : RBXScriptSignal
-Returns a list of the currently selected objects.
-
-OnSelectionDifference(selected : Tuple<any, nil>, unselected : Tuple<any, nil>) : RBXScriptSignal
+OnSelectionDifference (selected : Tuple<any, nil>, unselected : Tuple<any, nil>) : RBXScriptSignal
 This callback combines `OnValueSelected` and `OnValueUnselected` into one for convenience. Whenever the selection is changed (user selecting or unselecting an object), the selected object, if applicable, will be passed to the first value, and the unselected object, if applicable, will be passed to the second value.
 The following chart is a list of outcomes from user input returned by this callback:
 
-| User Action                                     | `selected`     | `unselected`     |
+| `OnSelectionDifference` User Action             | `selected`     | `unselected`     |
 | ----------------------------------------------- | -------------- | ---------------- |
 | Selecting a value in a multi-dropdown           | selected value | `nil`            |
 | Unselecting a value in a multi-dropdown         | `nil`          | unselected value |
 | Transferring the selection in a single-dropdown | current value  | previous value   |
-> [!NOTE]
-> These callbacks only fire if the user interacts with the dropdown, or if the selection was forced by ForceSelection. They do not fire when scripts change them to prevent potential infinite loops.
 ## 💡 Code Example
 
 The following code truly demon-strates the power of the API, so try to follow along! It creates a config, and modifies it to make two separate dropdowns: a single-select dropdown, and a multi-select dropdown. Then, it prints the selection, modifies it, and prints it again.

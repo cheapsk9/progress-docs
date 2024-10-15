@@ -74,7 +74,7 @@ Removes values from the dropdown's list.
 AddSelection (objectsToAdd : Tuple<Array, any>, tweenSelection? : bool) : void [Not Yet Implemented]
 Adds a selection to the objects in the list.
 
-SetSelection (selection : Tuple<Array, any>, tweenSelection? : bool) : void [Not Yet Implemented]
+SetSelection (selection : Tuple<Array, any>, tweenSelection? : bool) : void
 Overwrites the entire selection for the Dropdown's list.
 
 RemoveSelection (objectsToRemove : Tuple<Array, any>, tweenSelection? : bool) : void [Not Yet Implemented]

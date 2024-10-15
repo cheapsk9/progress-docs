@@ -20,6 +20,28 @@ ThemeId: number [Read Only]
 
 ShowMessage (title : string, text : string) : void
 Shows a modal message that requires the user to click the OK button to acknowledge and close it.
+> [!WARNING] This member is deprecated in favor of `ShowDialog`. Do not use for future work.
+
+ShowDialog (configTable : Dictionary) : void
+Shows a dialog inside the window. The configuration is as follows:
+
+| Name        | Type       | Default  | Description                                                                                                                                                               |
+| ----------- | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Title       | string     | Optional | The title of the dialog                                                                                                                                                   |
+| Text        | string     | Required | The main text of the dialog                                                                                                                                               |
+| CopyBoxText | string     | Optional | If specified, will show a read-only text box inside the dialog that the user can use to select the text and copy it. Useful for when clipboard functions are unavailable. |
+| Buttons     | Dictionary | Optional | Similar to toasts, this config allows buttons to be placed inside the dialog that can be used to run callbacks. For more information, see the table below.                |
+"Buttons" array:
+{
+... (for *n* options):
+
+| Name      | Type     | Default  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| --------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Title     | string   | "Button" | The text of the button.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Callback  | function | Optional | The function to call when the button is pressed.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Secondary | boolean  | Optional | Indicates to the user that this button is for the secondary action by using a muted color, rather than a primary. For example, Progress makes use of this internally when the user requests to close the hub. We don't want users to close our hub, but if they must, we give the option. We display the 'OK' button as a muted white color by using `Secondary=true`, and the 'Cancel' button as the theme color to indicate that it is the desired action. |
+...
+}
 
 SetMinimized (minimized : bool, transition? : bool) : void
 Sets whether the hub is currently minimized to the side of the screen.

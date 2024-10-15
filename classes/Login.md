@@ -25,8 +25,14 @@ Fires when the user (or scripts) change the whitelist state.
 
 LoginRequest (key : Tuple<string, nil>) : RBXScriptSignal
 Fires when the user clicks the login button. If using a key, this will return the key in the key text box, otherwise if using a whitelist, it returns `nil`.
+> [!WARNING] This member is deprecated in favor of `OnLogin`. Do not use for future work.
+## 📞 Callbacks
 
-**This ugly code here from previous UI (ignore):**
+OnLogin (key : Tuple<string, nil>)
+Fires when the user clicks the login button. If using a key, this will return the key in the key text box, otherwise if using a whitelist, it returns `nil`.
+## 💡 Code Example
+
+**This ugly code here from the old UI docs (ignore):**
 ```lua
 local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/cheapsk9/progress/main/main.lua"))()
 UI.Login:SetVisible(true)

@@ -4,8 +4,8 @@ local UI = Progress
 
 -- REMOVE EVERYTHING AFTER THIS LINE WHEN YOU ARE DONE TESTING!!!
 -- This simulates the user logging in, which is already handled by the loader.
-local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/cheapsk9/progress/main/main.lua"))()
-UI.Screen.Parent = game.Players.LocalPlayer.PlayerGui
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/cheapsk9/progress/main/beta.lua"))()
+UI.Screen.Parent = game.CoreGui
 UI.Login.Object.Visible = true
 UI.Window:Open(true)
 UI.Login.LoginRequest:Wait()

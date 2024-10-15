@@ -70,10 +70,7 @@ A reference to the [Login](classes/Login.md) object.
 
 Hub: Dictionary [Read Only]
 A reference to the [Hub](classes/Hub.md) object.
-## ⚡ Events
-
-Destroying () : RBXScriptSignal
-Fired when the hub is removed from memory.
+## 🚀 Methods
 
 ShowToast (configTable : Dictionary) : void
 Displays a toast notification whose configuration is determined by the passed `configTable`.
@@ -86,12 +83,12 @@ Toasts have the following properties. All are optional and not required, but the
 | Text                   | string              | Required | The main text of the notification                                                                                                                                  |
 | Type                   | number              | 0        | The type of notification. See [Toast Types](./toasts-reference.md). If unset, the notification will be styled according to the current theme colors, with no icon. |
 | Duration               | number              | 5        | Duration (in seconds) the notification should stay visible                                                                                                         |
-| Transparent            | bool                | Optional | Whether the notification should appear fully opaque (false, 0% transparency) or slightly transparent (true, 25% transparency)                                      |
+| Transparent            | boolean             | Optional | Whether the notification should appear fully opaque (false, 0% transparency) or slightly transparent (true, 25% transparency)                                      |
 | CloseWhenButtonClicked | boolean             | Optional | Whether to close the notification when one of the provided action buttons in `Buttons` is clicked.                                                                 |
 | CloseButtonVisible     | boolean             |          | Whether the close button is visible on the notification.                                                                                                           |
 | Buttons                | table of dictionary | Optional | An array of buttons to be displayed. (see below)                                                                                                                   |
- "Buttons" array:
- {
+"Buttons" array:
+{
 ... (for *n* options):
 
 | Name     | Type     | Default  | Description                                      |
@@ -116,3 +113,7 @@ Buttons = {
 	}
 }
 ```
+## ⚡ Events
+
+Destroying () : RBXScriptSignal
+Fired when the hub is removed from memory.

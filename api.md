@@ -13,10 +13,10 @@ For example:
 local window = api.Window
 
 window:Open()
-window:ShowMessage(
-    "Test Message", -- Title
-    "This is a test message!" -- Description
-)
+window:ShowDialog({
+    Title = "Test Message",
+    Text = "This is a test message!"
+})
 ```
 
 Functions of the API are also programmed to throw the least amount of errors possible (so there's less chance of Progress being detected through `LogService`), so be sure that the API is doing what you expect. If not, your calls to the API could be failing silently. A debug console specific to Progress is being planned for the future.
@@ -43,7 +43,10 @@ From the game script's side:
 -- Localize api
 local api = Progress
 
-api.Window:ShowMessage("Hello!", "Hello from the other side!")
+api.Window:ShowDialog({
+	Title = "Hello!",
+	Text = "Hello from the other side!"
+})
 ```
 ## 🔍 Properties
 

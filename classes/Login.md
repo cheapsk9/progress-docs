@@ -34,7 +34,7 @@ Fires when the user clicks the login button. If using a key, this will return th
 
 **This ugly code here from the old UI docs (ignore):**
 ```lua
-local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/cheapsk9/progress/main/main.lua"))()
+local UI = Progress
 UI.Login:SetVisible(true)
 UI.Window:Open()
 UI.LoginRequest:Connect(function(key)
@@ -47,7 +47,10 @@ UI.LoginRequest:Connect(function(key)
         proceed() -- proceed with whatever
     else
         -- failure
-        UI.Window:ShowMessage("Error", "Could not validate key. Please ensure you have entered it correctly.")
+        UI.Window:ShowDialog({
+	        Title = "Error",
+	        Text = "Could not validate key. Please ensure you have entered it correctly."
+        })
     end
 end)
 ```

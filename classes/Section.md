@@ -17,6 +17,9 @@ TitleVisible : bool [Read Only]
 CreateElement (name : string, configTable : Dictionary) : Dictionary
 Creates an element to be displayed or interacted with in this section.
 
+CreateSeparator () : void
+Adds a separator between elements in the section.
+
 SetPage (page : Dictionary) : void
 Sets which page this section belongs to.
 

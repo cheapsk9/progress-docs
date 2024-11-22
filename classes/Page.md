@@ -24,6 +24,9 @@ Creates an element to be displayed or interacted with in this page.
 CreateSection (name : string, placeholder : bool, titleHidden : bool) : void
 Creates a [`Section`](./Section.md) to group elements into. The second param is for legacy purposes and unused.
 
+CreateSeparator () : void
+Adds a separator between elements in the page.
+
 SetTabText (text : string) : void
 Sets the text displayed on the tab.
 

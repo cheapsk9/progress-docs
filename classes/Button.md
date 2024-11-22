@@ -31,10 +31,10 @@ local button = sections.Self.Main:CreateElement("Button", {
 
 -- Bind click event to the button
 button.Click:Connect(function()
-	UI.Window:ShowMessage(
-		"Test Message",
-		"I have hacked into your Samsung fridge.\nYou should be very scared right now. Real!"
-	)
+	UI.Window:ShowDialog({
+		Title = "Test Message",
+		Text = "I have hacked into your Samsung fridge.\nYou should be very scared right now. Real!"
+	})
 end)
 
 -- Wait 3 seconds

@@ -1,6 +1,6 @@
 # Icon Reference
 
-63 original, high-quality icons icons are available for display in tabs. Currently, tabs are the only visual component that can display these icons, but there may be more that support displaying them in the future. All tab icons were created on a 20x20 pixel grid.
+65 original, high-quality icons icons are available for display in tabs. Currently, tabs are the only visual component that can display these icons, but there may be more that support displaying them in the future. All tab icons were created on a 20x20 pixel grid.
 
 | Icon                                                                      | Name                   | Example Use Cases              |
 | ------------------------------------------------------------------------- | ---------------------- | ------------------------------ |
@@ -34,10 +34,12 @@
 | ![hand](assets/images/icons/hand.png)                                     | hand                   | Information, Credits           |
 | ![headphones](assets/images/icons/headphones.png)                         | headphones             | Sound-based cues               |
 | ![heart](assets/images/icons/heart.png)                                   | heart                  |                                |
+| ![wrench](assets/images/icons/help.png)                                   | help                   |                                |
 | ![home](assets/images/icons/home.png)                                     | home                   | Self-actions                   |
 | ![imp](assets/images/icons/imp.png)                                       | imp                    | Evil actions >;)               |
 | ![info](assets/images/icons/info.png)                                     | info                   | Information                    |
 | ![interface](assets/images/icons/interface.png)                           | interface              |                                |
+| ![wrench](assets/images/icons/key.png)                                    | key                    |                                |
 | ![lightning](assets/images/icons/lightning.png)                           | lightning              | Powerful, OP actions           |
 | ![list](assets/images/icons/list.png)                                     | list                   | List of objects in the game    |
 | ![lock](assets/images/icons/lock.png)                                     | lock                   |                                |
@@ -67,3 +69,4 @@
 | ![trending-up](assets/images/icons/trending-up.png)                       | trending-up            | Stats                          |
 | ![up-arrow](assets/images/icons/up-arrow.png)                             | up-arrow               | Upgrades                       |
 | ![wrench](assets/images/icons/wrench.png)                                 | wrench                 | Script configuration           |
+
